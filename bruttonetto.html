@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript embbeded into HTML</title>
+    </head>
+<body>
+    <script type="text/javaScript">
+        // Put your JavaScript Code here
+        var price = prompt("What's the price?");
+		var x = confirm("netto?",'yes','no');
+		if ( x == true){
+		var netto = price;
+		var brutto = netto * 1.19; 
+		var tax = netto * 0.19;
+		}
+		else {
+		var brutto = price;
+		var netto = brutto / 1.19; 
+		var tax = netto * 0.19;
+		}
+		document.write('Nettoprice:' + netto + '<br> Bruttoprice:' + brutto + '<br> Taxes:' + tax);
+		
+                   
+    </script>
+</body>
+</html>
